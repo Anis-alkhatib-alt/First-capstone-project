@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capstone Form</title>
+</head>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+  min-height: 2rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 40rem;
+  outline: none;
+  border: none;
+}
+.textarea {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  border: solid 1px #999;
+  border-radius: 0.5cap;
+  height: 1.5rem;
+}
+button {
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 0.5cap;
+  background-color: #193;
+  color: #eee;
+  outline: transparent;
+  border: none;
+  height: 2rem;
+  max-width: 5rem;
+  align-self: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+textarea {
+  min-height: 5rem ;
+}
+.checkbox-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+</style>
+<body>
+  <header>
+    <h1>Main Header</h1>
+    <nav>
+      <a href="index.html" target="_blank">Page 1</a>
+      <a href="page-2.html" target="_blank">Page 2</a>
+      <a href="page-3.html" target="_blank">Page 3</a>
+      <a href="page-4.html" target="_blank">Page 4</a></nav>
+  </header>
+  <form action="index.html">
+    <fieldset>
+      <div class="text-field-1">
+        <label for="text-field-1">Text-Field-1</label>
+        <input type="text" name="text-field-1" id="text-field-1" placeholder="Enter text1">
+      </div>
+      <div class="text-field-2">
+        <label for="Text-Field-2">Text-Field-2</label>
+        <input type="text" name="text-field-2" id="text-field-2" placeholder="Enter text2">
+      </div>
+      <div class="checkbox-1">
+        <label for="checkbox-1">Checkbox-1</label>
+        <input type="checkbox" name="checkbox-1" id="checkbox-1">
+      </div>
+      <div class="textarea">
+        <label for="textarea">Some Story</label>
+        <textarea name="textarea" id="textarea" placeholder="Enter a bunch of text"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+</html>

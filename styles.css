@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+  min-height: 2rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: large;
+}
+p {
+  text-align: justify;
+}
+figure {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+figcaption {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 1em;
+}
+header {
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  margin: 2em;
+}
